@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>game</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+   
+    <h1 class="heading">SIMON'S GAME</h1>
+    <h2 class="h2">Press any key to start</h2>
+    <div class="btn-container">
+      <div class="left">
+        <ul>
+          <li>The game consists of a sequence of colored boxes that blink one at a time</li>
+          <li>Players must remember the order in which the boxes blinked and click on them in the same sequence.</li>
+          <li>Each round, the sequence increases in length, challenging players' memory and attention.</li>
+          <li> If a player clicks on the wrong box or clicks them in the wrong order, they lose the round.</li>
+          <li>The game continues until the player makes a mistake or completes the sequence..</li>
+        </ul>
+      </div>
+      
+      <div class="line1">
+        <div class="btn red" type="button" id="red">1</div>
+        <div class="btn yellow" type="button" id="yellow">2</div>
+      </div>
+      <div class="line2">
+        <div class="btn green" type="button" id="green">3</div>
+        <div class="btn purple" type="button" id="purple">4</div>
+      </div>
+      <div class="right">
+        <ul>
+          <li>Round 1: Red box blinks.
+            Player clicks on the red box.</li>
+          <li>Round 2: Red box blinks, then blue box blinks.
+            Player clicks on the red box, then the blue box.</li>
+          <li>Round 3: Red box blinks, then blue box blinks, then green box blinks.
+            Player clicks on the red box, then the blue box, then the green box.</li>
+          <li>Round 4: Red box blinks, then blue box blinks, then green box blinks, then yellow box blinks.
+      </li>
+         <li>Player clicks on the red box, then the blue box, then the green box, then the yellow box.</li>
+        </ul>
+      </div>
+    </div>
+    <script src="logic.js"></script>
+  </body>
+</html>
